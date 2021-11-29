@@ -1,0 +1,201 @@
+*{
+    display:border-box;
+}
+header{
+    background-color:rgb(52, 66, 78);
+    width:100%;
+    height:64px;
+    text-align:center;
+    margin-top:-22px;
+}
+
+h1{
+    color:white;
+    padding-top:24px;
+    text-align:center;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 21px;
+    color:rgb(52,66,78);
+}
+
+.signup_box{
+    text-align:center;
+    display:border-box
+}
+.sig_sec{
+    width:300px;
+    color:gray;
+    font-size: 17px;
+}
+.thick{
+    border-top: solid 5px;
+    width:95%;
+    margin-bottom:2px;
+    
+}
+.thin{
+    border-top:solid 1px;
+    width:95%;
+    margin-top:1px;
+}
+
+body{
+    margin:0px;
+}
+
+label{
+    color:gray;
+}
+
+input{
+    border-style: none;
+}
+
+.contact_box{
+    margin-left:11px;
+}
+
+#state{
+    width:96%;
+    background-color:rgb(212, 211, 211);
+    border-radius: 5px;
+    padding: 10px;
+    border:none;
+}
+
+#zip{
+    width:35%;
+}
+.contact_box label{
+    display:block;
+    margin:5px 0px;
+}
+
+input{
+    text-align:right;
+}
+::placeholder{
+    font-style:italic;
+}
+
+form li{
+    list-style:none;
+
+}
+form input{
+    padding:10px;
+    background-color:rgb(212, 211, 211);
+    border-radius:5px;
+    border-color:none;
+    width:93%;
+}
+
+form ul{
+    padding:0px;
+}
+
+label{
+    font-size:14px;
+}
+
+.single-line{
+    border-top:solid 2px;
+    width:95%;
+}
+
+.newslet_box input:active{
+    background-color:blue;
+}
+
+#news{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.newsletters label{
+    margin-left:10px;
+}
+
+.newslet_box{
+    margin-left:10px;
+    width:96%;
+}
+
+.bottom_select{
+    width:99%;
+    color:gray;
+    font-size: 16px;
+}
+
+.very_bottom label{
+    display:inline-block;
+    margin-left:10px;
+    margin-top:7px;
+}
+
+
+
+textarea{
+    background-color:rgb(212, 211, 211);
+    width:95%;
+    height:80px;
+    border-radius:5px;
+    margin-bottom:16px;
+    border:none;
+}
+
+button{
+    width:97%;
+    background-color: rgb(69, 148, 148);
+    border-radius: 5px;
+    border:none;
+    padding-top:15px;
+    padding-bottom:15px;
+    color:white;
+    font-size:20px;
+    font-weight:bolder;
+}
+
+input #news:active{
+    background:blue;
+}
+
+.copy{
+    text-align:center;
+    color:gray;
+    font-style:italic;
+    font-size:12px;
+}
+
+
+
+@media screen and (min-width:768px){
+    .signup_box, .contact_box, .newslet_box, .very_bottom{
+        width:60%;
+        margin-left:20%;
+    }
+
+    h1{
+        width:768px;
+    }
+
+    .contact_box label{
+        display:inline-block;
+        width:25%;
+    }
+
+    #state{
+        width:60%;
+    }
+
+    form input{
+        display:inline-block;
+        padding: 10px;
+        background-color: rgb(212, 211, 211);
+        border-radius: 5px;
+        border-color: none;
+        width: 40%;}
+}
