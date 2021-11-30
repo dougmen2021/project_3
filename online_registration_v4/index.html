@@ -20,7 +20,8 @@
             <hr class="thin">
         </div>
         <form class="contact_box" action="contact-info-page" method="post">
-                <fieldset>
+                <div>
+                    <fieldset class="info_box">
                     <legend><h2>Contact Information</h2></legend>
                         <ul>
                         <li>
@@ -33,15 +34,15 @@
                         </li>
                         <li>
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="user_phone">
+                            <input type="tel" id="phone" name="user_phone" placeholder="Phone">
                         </li>
                         <li>
                             <label for="address">Address</label>
-                            <input type="text" id="address" name="user_address">
+                            <input type="text" id="address" name="user_address" placeholder="Address">
                         </li>
                         <li>
                             <label for="city">City</label>
-                            <input type="text" id="city" name="user_city">
+                            <input type="text" id="city" name="user_city" placeholder="City">
                         </li>
                         <li>
                             <label for="state">State</label>
@@ -100,27 +101,44 @@
                             </li>
                             <li>
                                 <label for="zip">Zip Code</label>
-                                <input type="text" id="zip" name="user_zip">
+                                <input type="text" id="zip" name="user_zip" placeholder="Zip">
                             </li>
                         </ul>
-                </fieldset>
+                    </fieldset>
+                </div>
                     <hr class=single-line>
                 <div class="newslet_box">
                         <fieldset>
                             <legend><h2>Newsletter</h2></legend>
                                 <p class="bottom_select">Select the newsletters you would like to receive</p>
                                     <div class="newsletters">
-                                        <input type="checkbox" id="news_html" value="perferred_news_html" name="user_news"><label class="HTML_news" for="news_html">HTML News</label><br>
-                                        <input type="checkbox" id="news_css" value="perferred_news_css" name="user_news"><label class="CSS_news" for="news_css">CSS News</label><br>
-                                        <input type="checkbox" id="news_js" value="perferred_news_js" name="user_news"><label class="Javascript_news" for="news_js">Javascript News</label><br>
+                                        <label for="news_html">
+                                            <input type="checkbox" id="news_html" name="user_news" value="perferred_news_html">
+                                            <span>HTML News</span>
+                                        </label><br>
+                                        <label for="news_css">
+                                            <input type="checkbox" id="news_css" name="user_news" value="perferred_news_css">
+                                            <span>CSS News</span>
+                                        </label><br>
+                                        <label for="news_js">
+                                            <input type="checkbox" id="news_js" name="user_news" value="perferred_news_js">
+                                            <span>Javascript News</span>
+                                        </label>
                                     </div>
                                     <div class="very_bottom">
                                         <p class="bottom_select">Newsletter format</p>
-                                        <input type="radio" id="format_html" value="newsletter_format_html" name="user_format"><label class="html_format" for="format_html">HTML</label><br>
-                                        <input type="radio" id="format_plain" value="newsletter_format_plain" name="user_format"><label class="plain_format" for="format_plain">Plain text</label><br>
-                                        
+                                        <label for="format_html">
+                                            <input type="radio" id="format_html" name="user_format" value="newsletter_format_html">
+                                            <span>HTML</span>
+                                        </label>
+                                        <label for="format_plain">
+                                            <input type="radio" id="format_plain" name="user_format" value="newsletter_format_plain">
+                                            <span>Plain text</span>
+                                        </label>
+                                    </div>
+                                    <div class="text_area">    
                                         <label for="textarea">Other topics you'd like to hear about</label>
-                                            <textarea id="textarea" name="other_topics"></textarea>
+                                            <textarea id="textarea" name="other_topics" placeholder="Comment here"></textarea>
                                         <button type="submit">Sign Up</button>
                                         <p class="copy">Copyright The Code Review</p> 
                                     </div>

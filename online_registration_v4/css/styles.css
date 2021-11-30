@@ -62,7 +62,7 @@ input{
 }
 
 #state{
-    width:96%;
+    width:93%;
     background-color:rgb(212, 211, 211);
     border-radius: 5px;
     padding: 10px;
@@ -70,18 +70,19 @@ input{
 }
 
 #zip{
-    width:35%;
+    width:50%;
 }
 .contact_box label{
-    display:block;
+    display:flex;
     margin:5px 0px;
 }
 
 input{
-    text-align:right;
+    text-align:left;
 }
 ::placeholder{
     font-style:italic;
+    text-align:right;
 }
 
 form li{
@@ -105,7 +106,7 @@ label{
 
 .single-line{
     border-top:solid 2px;
-    width:95%;
+    width:84%;
 }
 
 .newslet_box{
@@ -119,18 +120,31 @@ label{
     font-size: 16px;
 }
 
-.very_bottom label{
-    display:inline-block;
-    margin:0px 0px 0px 10px;
-    padding-bottom:10px;
+.newsletters input{
+    width:auto;
+}
+.newsletters label{
+    display:flex;
+}
+.info_box input{
+    transition:width 2s;
+}
+.info_box input:focus{
+    width:100%;
 }
 
-.very_bottom input{
-    float:left;
-    width:6%;
+#zip{
+    transition:width 2s;
 }
-
-
+#zip:focus{
+    width:100%;
+}
+#state{
+    transition:width 2s;
+}
+#state:focus{
+    width:100%;
+}
 
 textarea{
     background-color:rgb(212, 211, 211);
@@ -139,6 +153,11 @@ textarea{
     border-radius:5px;
     margin-bottom:16px;
     border:none;
+    transition:width 2s;
+}
+
+textarea:focus{
+    width:100%;
 }
 
 button{
@@ -160,44 +179,84 @@ button{
     font-size:12px;
 }
 
-input text:focus{
-    border-color:orange;
+
+.info_box{
+    background-color:orange;
+}
+.newsletters{
+    display:flex;
+    flex-wrap:wrap;
+}
+.newsletters input{
+    width:auto;
+}
+.newsletters label{
+    display:flex;
+}
+.newsletters span{
+    margin-left:10px;
+    margin-right:53px;
 }
 
-textarea:focus{
-    border-color:orange;
+.very_bottom label{
+    display:flex;
 }
+
+.very_bottom input{
+    width:auto;
+}
+.very_bottom span{
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
 
 
 
 
 @media screen and (min-width:768px){
-    .signup_box, .contact_box, .newslet_box, .very_bottom{
-        width:60%;
-        margin-left:20%;
-    }
-
     h1{
         width:768px;
         font-size:16px;
     }
 
+    .thick, .thin{
+        width:53%;
+        margin-right:26%;
+    }
+    .single-line{
+        width:88%;
+        margin-right:26%;
+    }
+
     .contact_box label{
-        display:inline-block;
-        width:25%;
+        display:flex;
+        flex-direction: row;
+        margin-right:25px;
+    }
+    #zip{
+        margin-right: 181px;
     }
 
     #state{
-        width:66%;
+        width:67%;
         margin-top:12px;
     }
-
+    li{
+        display:flex;
+        justify-content: space-between;
+    }
+    .info_box label{
+        padding-top:20px;
+    }
+   
     form input{
-        display:inline-block;
+        display:flex;
+        justify-content: space-between;
         padding: 10px;
         background-color: rgb(212, 211, 211);
         border-radius: 5px;
-        width: 62%;
+        width: 67%;
         margin-top:12px;
     }
 
@@ -215,17 +274,14 @@ textarea:focus{
     }
 
     .contact_box{
-        margin-left: 170px;
-    }
-    
-    .single-line{
         width:60%;
+        margin:auto;
     }
-
-    .very_bottom{
-        margin-left:0px;
-        margin-right:0px;
-        width:100%;
+    .text_area{
+        margin-top:10px;
+    }
+    .text_area label{
+        width:51%;
     }
     
     .bottom_select{
@@ -244,5 +300,22 @@ textarea:focus{
 
     .copy{
         margin-top:25px;
+    }
+
+    #zip{
+        width:25%;
+    }
+
+    .newsletters{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+    }
+
+    .very_bottom span{
+        margin-left:10px;
+    }
+    .newslet_box span{
+        margin-top:10px;
     }
 }
